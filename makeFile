@@ -1,0 +1,9 @@
+vet:
+	go vet main.go
+build:
+	go build -o ./bin/ main.go
+dev:
+	go run main.go
+run-bin:
+	./bin/func
+all: vet build run-bin
